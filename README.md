@@ -15,25 +15,31 @@ Ensure the following dependency is added to your `Cargo.toml` file:
 ```toml
 [dependencies]
 flate2 = "1.0"
+```
 
-Usage
+### Usage
 Build the Project: Clone this project and navigate to its directory, then build with Cargo:
 
-bash
+```
 Copy code
 cargo build --release
-Run the Project: After building, run the program with:
+```
 
-bash
+### Run the Project: After building, run the program with:
+
+```
 Copy code
 cargo run --release <source-file> <target-file>
 <source-file>: Path to the file you want to compress.
 <target-file>: Path where the compressed file will be saved.
-Example
-bash
+```
+### Example
+```
 Copy code
 cargo run --release example.txt example.txt.gz
-Code Overview
+```
+
+### Code Overview
 Arguments: The program expects two command-line arguments: the source file and the target file.
 Compression: It reads the source file, compresses it with Gzip, and writes it to the target file.
 Timing: It tracks and displays the time taken for the compression process.
